@@ -45,6 +45,8 @@
         window.authorizations.add("key", new ApiKeyAuthorization("api_key", key, "query"));
       }
     })
+    // fixed user login with user 'unittest' and password 'test'
+        window.authorizations.add("key", new ApiKeyAuthorization("Authorization", 'Basic dW5pdHRlc3Q6dGVzdA==', "header"));
     window.swaggerUi.load();
   });
 
