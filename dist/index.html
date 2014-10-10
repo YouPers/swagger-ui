@@ -20,7 +20,7 @@
     $(function () {
       var docurl = "http://localhost:8000/api-docs";
       if (window.location.hostname !== "localhost") {
-          docurl = "http://" + window.location.hostname + "/api/api-docs";
+          docurl = "https://" + window.location.hostname + "/api/api-docs";
       }
       window.swaggerUi = new SwaggerUi({
       url: docurl,
